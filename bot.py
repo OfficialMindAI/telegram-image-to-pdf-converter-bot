@@ -67,7 +67,7 @@ async def post_init(application: Application):
 def run_bot() -> None:
     application = (
         ApplicationBuilder()
-        .token("7830114682:AAFQBhX3lclz-9HR1C5FAsIuHO8zSOYcOKY")
+        .token("YOUR_TOKEN")
         .concurrent_updates(True)
         .rate_limiter(AIORateLimiter(max_retries=5))
         .http_version("1.1")
